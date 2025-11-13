@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Search, Plus, Eye, MapPin, Users } from "lucide-react";
+import Navbar from "../components/Navbar";
 
 export default function JobPostingsPage() {
   const [search, setSearch] = useState("");
@@ -64,15 +65,13 @@ export default function JobPostingsPage() {
   return (
     <div className="min-h-screen flex bg-gray-50 text-gray-900">
       {/* Sidebar */}
-      <aside className="w-64 bg-white shadow-md flex flex-col p-6">
-        <h2 className="text-xl font-semibold mb-8">ATS NAVIGATION</h2>
-        <nav className="flex flex-col gap-4 text-gray-600 font-medium">
-          <a href="#" className="hover:text-blue-600">Dashboard</a>
-          <a href="#" className="text-blue-600 font-semibold">Job Postings</a>
-          <a href="#" className="hover:text-blue-600">Candidates</a>
-          <a href="#" className="hover:text-blue-600">Recruitment Tracker</a>
-          <a href="#" className="hover:text-blue-600">Import Data</a>
-        </nav>
+      <aside >
+        <Navbar>
+      <h1></h1>
+      
+      {/* Job cards or dashboard content here */}
+    </Navbar>
+  
       </aside>
 
       {/* Main Content */}
