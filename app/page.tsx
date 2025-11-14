@@ -1,20 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex bg-gray-50 text-gray-900">
-      {/* Sidebar */}
-      <aside className="w-64 bg-white shadow-md flex flex-col p-6">
-        <h2 className="text-xl font-semibold mb-8">ATS NAVIGATION</h2>
-        <nav className="flex flex-col gap-4 text-gray-600 font-medium">
-          <a href="#" className="hover:text-blue-600">Dashboard</a>
-          <a href="/jobPositions" className="hover:text-blue-600">Job Postings</a>
-          <a href="#" className="hover:text-blue-600">Candidates</a>
-          <a href="#" className="hover:text-blue-600">Recruitment Tracker</a>
-          <a href="#" className="hover:text-blue-600">Import Data</a>
-        </nav>
+      {/* Navbar */}
+      <aside>
+      <Navbar><h1></h1></Navbar>
       </aside>
 
       {/* Main Dashboard */}
