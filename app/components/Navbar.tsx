@@ -11,10 +11,10 @@ const Navbar = ({ children }: { children: React.ReactNode }) => {
         <h2 className="text-xl font-semibold mb-8">ATS NAVIGATION</h2>
         <nav className="flex flex-col gap-4 text-gray-600 font-medium">
           <a href="/" className="hover:text-blue-600">Dashboard</a>
-          <a href="/jobPositions" className="text-blue-600 font-semibold">Job Postings</a>
-          <a href="#" className="hover:text-blue-600">Candidates</a>
-          <a href="#" className="hover:text-blue-600">Recruitment Tracker</a>
-          <a href="#" className="hover:text-blue-600">Import Data</a>
+          <a href="/jobPositions" className="hover:text-blue-600">Job Postings</a>
+          <a href="/candidates" className="hover:text-blue-600">Candidates</a>
+          <a href="/recruitmentTracker" className="hover:text-blue-600">Recruitment Tracker</a>
+          <a href="/importData" className="hover:text-blue-600">Import Data</a>
         </nav>
       </aside>
 
